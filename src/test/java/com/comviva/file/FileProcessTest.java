@@ -28,7 +28,6 @@ public class FileProcessTest {
 	public void fileProcessSumAllNumberOfFile() throws FileProcessException {
 		FileProcess fp = new FileProcess();
 		Double sum = fp.sumAllNumbers("/home/hernan/workspace/eclipse-workspace/comviva/files/test1.txt");
-		System.out.println(sum);
 		assertEquals(new Double(124.20), new Double(new BigDecimal(sum).setScale(2, RoundingMode.HALF_EVEN).doubleValue()));
 	}
 	
