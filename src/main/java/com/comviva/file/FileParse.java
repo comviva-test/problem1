@@ -16,7 +16,13 @@ public class FileParse {
 		if (path != null)
 			file = new File(path);
 	}
-	
+	/*
+		Pre condition:
+			* numbers can be negatives
+			* word are separeted by space 
+		Post Condition:
+			* return a double list  
+	*/
 	@SuppressWarnings({ "finally" })
 	public List<Double> parseFile() throws FileParseException{
 		List<Double> numbers = new ArrayList<Double>();

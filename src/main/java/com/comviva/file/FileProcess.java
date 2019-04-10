@@ -6,7 +6,13 @@ import com.comviva.exception.FileParseException;
 import com.comviva.exception.FileProcessException;
 
 public class FileProcess {
-	
+
+		/*
+			Pre condition:
+				* not contemplate overflow case
+			Post condition:
+				* return a sum of numbers
+		*/
 		public Double sumAllNumbers(String path) throws FileProcessException {
 			FileParse fileParse = new FileParse(path);
 			List<Double> numbers;
